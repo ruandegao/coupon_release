@@ -1,5 +1,7 @@
 package com.shangan.trade.coupon.service;
 
+import java.util.Set;
+
 public interface CouponSendService {
 
     /**
@@ -27,5 +29,5 @@ public interface CouponSendService {
      * @param userIdSet
      * @return
      */
-//    boolean sendUserCouponBatch(long batchId, Set<Long> userIdSet);
+    boolean sendUserCouponBatch(long batchId, Set<Long> userIdSet);
 }

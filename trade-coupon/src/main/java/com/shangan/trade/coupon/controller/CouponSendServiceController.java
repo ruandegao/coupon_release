@@ -4,7 +4,11 @@ import com.shangan.trade.coupon.service.CouponSendService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+
+import java.util.Set;
+
 
 @Controller
 public class CouponSendServiceController {
@@ -45,9 +49,9 @@ public class CouponSendServiceController {
      * @param userIdSet
      * @return
      */
-//    @RequestMapping("/coupon/sendUserCouponBatch")
-//    @ResponseBody
-//    boolean sendUserCouponBatch(long batchId, Set<Long> userIdSet){
-//        return couponSendService.sendUserCouponBatch(batchId,userIdSet);
-//    }
+    @RequestMapping("/coupon/sendUserCouponBatch")
+    @ResponseBody
+    boolean sendUserCouponBatch(@RequestParam("batchId") long batchId, @RequestParam("userIdSet") Set<Long> userIdSet){
+        return couponSendService.sendUserCouponBatch(batchId,userIdSet);
+    }
 }

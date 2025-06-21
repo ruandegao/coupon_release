@@ -58,9 +58,9 @@ public class CouponBatchTest {
         couponBatchDao.updateCouponBatch(couponBatch);
     }
 
-//    @Test
-//    public void pushBatchListRuleToCacheTest() {
-//        boolean res = couponBatchService.pushBatchListRuleToCache();
-//        System.out.println(res);
-//    }
+    @Test
+    public void pushBatchListRuleToCacheTest() {
+        boolean res = couponBatchService.pushBatchListRuleToCache();
+        System.out.println(res);
+    }
 }

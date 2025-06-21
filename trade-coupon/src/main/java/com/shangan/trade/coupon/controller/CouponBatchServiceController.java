@@ -40,16 +40,16 @@ public class CouponBatchServiceController {
         return couponBatchService.queryCouponBatchList();
     }
 
-//    /**
-//     * 将批次信息的规则信息push到Redis中
-//     *
-//     * @return
-//     */
-//    @RequestMapping("/coupon/pushBatchListRuleToCache")
-//    @ResponseBody
-//    boolean pushBatchListRuleToCache() {
-//        return couponBatchService.pushBatchListRuleToCache();
-//    }
+    /**
+     * 将批次信息的规则信息push到Redis中
+     *
+     * @return
+     */
+    @RequestMapping("/coupon/pushBatchListRuleToCache")
+    @ResponseBody
+    boolean pushBatchListRuleToCache() {
+        return couponBatchService.pushBatchListRuleToCache();
+    }
 
     /**
      * 根据ID查询对应的券批次
@@ -57,9 +57,9 @@ public class CouponBatchServiceController {
      * @param id
      * @return
      */
-//    @RequestMapping("/coupon/queryCouponBatchById")
-//    @ResponseBody
-//    CouponBatch queryCouponBatchById(long id) {
-//        return couponBatchService.queryCouponBatchById(id);
-//    }
+    @RequestMapping("/coupon/queryCouponBatchById")
+    @ResponseBody
+    CouponBatch queryCouponBatchById(long id) {
+        return couponBatchService.queryCouponBatchById(id);
+    }
 }

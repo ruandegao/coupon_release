@@ -25,4 +25,6 @@ public interface CouponBatchMapper {
      * @return
      */
     int updateSendCouponBatchCount(Long id);
+
+
 }

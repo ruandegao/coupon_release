@@ -21,11 +21,11 @@ public interface CouponBatchService {
      */
     List<CouponBatch> queryCouponBatchList();
 
-//    /**
-//     * 将批次信息的规则信息push到Redis中
-//     * @return
-//     */
-//    boolean pushBatchListRuleToCache();
+    /**
+     * 将批次信息的规则信息push到Redis中
+     * @return
+     */
+    boolean pushBatchListRuleToCache();
 
 
     /**

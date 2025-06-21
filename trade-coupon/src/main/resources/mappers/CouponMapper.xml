@@ -28,9 +28,9 @@
     where id = #{id,jdbcType=BIGINT}
   </delete>
   <insert id="insert" parameterType="com.shangan.trade.coupon.db.model.Coupon">
-    insert into coupon_user (id, user_id, batch_id,
-      coupon_name, status, order_id,
-      received_time, validate_time, used_time,
+    insert into coupon_user (id, user_id, batch_id, 
+      coupon_name, status, order_id, 
+      received_time, validate_time, used_time, 
       create_time)
     values (#{id,jdbcType=BIGINT}, #{userId,jdbcType=BIGINT}, #{batchId,jdbcType=BIGINT}, 
       #{couponName,jdbcType=VARCHAR}, #{status,jdbcType=INTEGER}, #{orderId,jdbcType=BIGINT}, 
@@ -150,4 +150,10 @@
       create_time = #{createTime,jdbcType=TIMESTAMP}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="queryUserCoupons" resultMap="BaseResultMap" parameterType="java.lang.Long">
+  select
+  <include refid="Base_Column_List"/>
+  from coupon_user where user_id = #{userId,jdbcType=BIGINT}
+  </select>
 </mapper>

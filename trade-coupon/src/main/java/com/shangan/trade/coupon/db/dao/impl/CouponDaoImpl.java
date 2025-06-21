@@ -21,16 +21,16 @@ public class CouponDaoImpl implements CouponDao {
         return result > 0;
     }
 
-//    @Override
-//    public List<Coupon> queryUserCoupons(long userId) {
-//        return couponMapper.queryUserCoupons(userId);
-//    }
-//
-//    @Override
-//    public Coupon queryCouponById(long couponId) {
-//        return couponMapper.selectByPrimaryKey(couponId);
-//    }
-//
+    @Override
+    public List<Coupon> queryUserCoupons(long userId) {
+        return couponMapper.queryUserCoupons(userId);
+    }
+
+    @Override
+    public Coupon queryCouponById(long couponId) {
+        return couponMapper.selectByPrimaryKey(couponId);
+    }
+
 //    @Override
 //    public boolean updateCoupon(Coupon coupon) {
 //        return couponMapper.updateByPrimaryKey(coupon) > 0;

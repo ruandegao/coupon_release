@@ -15,12 +15,12 @@ public interface CouponDao {
     boolean insertCoupon(Coupon coupon);
 
     /**
-     * 查询用的优惠券
+     * 查询用户的优惠券
      *
      * @param userId
      * @return
      */
-//    List<Coupon> queryUserCoupons(long userId);
+    List<Coupon> queryUserCoupons(long userId);
 
 
     /**
@@ -29,7 +29,7 @@ public interface CouponDao {
      * @param couponId
      * @return
      */
-//    Coupon queryCouponById(long couponId);
+    Coupon queryCouponById(long couponId);
 
     /**
      * 更新券的信息

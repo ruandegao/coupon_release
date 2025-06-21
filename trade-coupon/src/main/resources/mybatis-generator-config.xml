@@ -45,17 +45,17 @@
         </javaClientGenerator>
 
         <!-- 对应要操作的表 -->
-                <table schema="" tableName="coupon_batch" domainObjectName="CouponBatch" enableCountByExample="false"
+               <!-- <table schema="" tableName="idempotent" domainObjectName="IdempotentTask" enableCountByExample="false"
                        enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"
-                       selectByExampleQueryId="false"></table>
+                       selectByExampleQueryId="false"></table>-->
 
-                <table schema="" tableName="coupon_user" domainObjectName="Coupon" enableCountByExample="false"
+                <!--<table schema="" tableName="coupon_user" domainObjectName="Coupon" enableCountByExample="false"
                        enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"
-                       selectByExampleQueryId="false"></table>
+                       selectByExampleQueryId="false"></table>-->
 
-        <!--<table schema="" tableName="coupon_code" domainObjectName="CouponCode" enableCountByExample="false"
+        <table schema="" tableName="coupon_code" domainObjectName="CouponCode" enableCountByExample="false"
                enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false"
                selectByExampleQueryId="false">
-        </table>-->
+        </table>
     </context>
 </generatorConfiguration>

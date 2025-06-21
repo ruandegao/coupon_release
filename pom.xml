@@ -26,8 +26,8 @@
         <module>trade-user</module>
         <module>trade-coupon</module>
         <module>trade-admin</module>
-        <module>trade-goods</module>
-        <module>trade-order</module>
+<!--        <module>trade-goods</module>-->
+<!--        <module>trade-order</module>-->
     </modules>
 
     <dependencies>
